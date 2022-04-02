@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import Header from './components/header/header'
 // Importando o component Main
 import Main from './main'
+import Portfolios from './components/portfolio/portfolios';
+
 
 class App extends Component {
   render() {
@@ -11,9 +13,24 @@ class App extends Component {
       <div>
         <Header />
         <Main />
+        <Portfolios portfolios ={this.state.portfolios} />
       </div>
     );
   }
+
+  state = {
+    portfolios: []
+  }
+
+  componentDidMount() {
+    fetch('https://cors-anywhere.herokuapp.com/http://localhost:8080/portfolios/333')
+    .then(res => res.json())
+    .then((data) => {
+      this.setState({ portfolios: data })
+    })
+    .catch(console.log)
+  }
+
 }
 
 export default App;

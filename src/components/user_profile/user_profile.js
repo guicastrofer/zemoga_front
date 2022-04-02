@@ -12,10 +12,7 @@ const UserProfile = () => (
           <img src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" className="responsive-img" alt="cat"/>
         </Col>
       </Row>
-      <Row className="center-align">
-        <h5 >Lorem Ipsum</h5>
-        <p className="grey darken-2 white-text">Ruby Developer</p>
-      </Row>
+
   </Card>
 );
 
