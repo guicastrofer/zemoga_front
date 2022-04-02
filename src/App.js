@@ -23,7 +23,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://cors-anywhere.herokuapp.com/http://localhost:8080/portfolios/333')
+    fetch('portfolios/333')
     .then(res => res.json())
     .then((data) => {
       this.setState({ portfolios: data })
