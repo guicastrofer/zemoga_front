@@ -8,8 +8,8 @@ import { Row, Col, Card } from 'react-materialize';
 const UserProfile = () => (
   <Card>
       <Row>
-        <Col s={8} m={8} offset="s2 m2">
-          <img src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" className="circle responsive-img" alt="cat"/>
+        <Col s={100} m={100} offset="s1 m1">
+          <img src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" className="responsive-img" alt="cat"/>
         </Col>
       </Row>
       <Row className="center-align">
