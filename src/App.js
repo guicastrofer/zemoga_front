@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import Header from './components/header/header'
 // Importando o component Main
 import Main from './main'
-import Portfolios from './components/portfolio/portfolios';
+import Portfolio from './components/portfolio/portfolio';
 
 
 class App extends Component {
@@ -13,7 +13,7 @@ class App extends Component {
       <div>
         <Header />
         <Main />
-        <Portfolios portfolios ={this.state.portfolios} />
+        <Portfolio portfolio ={this.state.portfolio} />
       </div>
     );
   }
@@ -26,7 +26,7 @@ class App extends Component {
     fetch('portfolios/333')
     .then(res => res.json())
     .then((data) => {
-      this.setState({ portfolios: data })
+      this.setState({ portfolio: data })
     })
     .catch(console.log)
   }
