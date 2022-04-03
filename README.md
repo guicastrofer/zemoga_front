@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+This project is the front end of the API below:
+
+https://github.com/guicastrofer/zemoga-challange-java
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
